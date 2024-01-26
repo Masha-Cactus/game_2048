@@ -93,7 +93,7 @@ function addElement() {
 }
 
 function delayedAddElement() {
-  window.setTimeout(addElement, 300);
+  window.setTimeout(addElement, 200);
   canMove = null;
 }
 
@@ -354,14 +354,9 @@ startBtn.addEventListener('click', () => {
     addElement();
     info.classList.add('active');
   } else {
-    startBtn.classList.remove('restart');
-    startBtn.classList.add('start');
-    startBtn.textContent = 'Start';
     score.textContent = 0;
     scoreValue = 0;
-    info.classList.remove('active');
     loseMessage.classList.add('hidden');
-    startMassage.classList.remove('hidden');
 
     const allModifier = [];
 
@@ -376,6 +371,8 @@ startBtn.addEventListener('click', () => {
       return cell;
     });
     values = values.map(row => row.map(() => 0));
+    addElement();
+    addElement();
   }
 });
 
