@@ -1,5 +1,6 @@
-This is my implementation of the well-known game 2048 based on CSS, HTML, and JS.
-    - [DEMO LINK](https://Masha-Cactus.github.io/2048_game)
+This is my implementation of the well-known game 2048 using CSS, HTML, and JS.
+
+  - [DEMO LINK](https://Masha-Cactus.github.io/2048_game)
 
 Here are the rules of 2048:
 1. The Grid: The game is played on a 4x4 grid.
